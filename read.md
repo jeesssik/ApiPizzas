@@ -16,7 +16,7 @@ A grandes rasgos, nuestro objetivo va a ser crear una API que implemente una ló
 ---
 
 Este es el diagrama de como va a quedar la API.
-![](diagrama.png)
+![](pizza.API/diagrama.png)
 
 
 ## Entorno
