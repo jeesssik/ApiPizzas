@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "9a0e9cdf-0c61-4ca6-973e-72860ce4d505",
+		"name": "PizzasAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20946434"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5221/api/pizzas/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "nombre",
+						"value": "pepe",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5221/api/pizzas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5221",
+					"path": [
+						"api",
+						"pizzas",
+						"1"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "pepe",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5221/api/pizzas/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5221",
+					"path": [
+						"api",
+						"pizzas",
+						"11"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "11",
+							"disabled": true
+						},
+						{
+							"key": "nombre",
+							"value": "pizzaMesseta",
+							"disabled": true
+						},
+						{
+							"key": "libreGluten",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "descripcion",
+							"value": "la mejor de todas",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"nombre\": \"Pizzaaaaaaaaaaaaaa\",\r\n        \"libreGluten\": true,\r\n        \"importe\": 1000,\r\n        \"descripcion\": \"Pizza con queso Muzzarella, tiene rica cebolla y te deja un aliento como para hacerle la permanente a tu pareja..\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5221/api/pizzas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5221",
+					"path": [
+						"api",
+						"pizzas",
+						"2"
+					],
+					"query": [
+						{
+							"key": "\"nombre\"",
+							"value": "\"asd\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
