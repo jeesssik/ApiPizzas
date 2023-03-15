@@ -1,0 +1,23 @@
+Las consultas que van a hacer para chequear que la API funcione correctamente son:
+
+
+ http://localhost:5000/Api/Pizzas      <<<< Para traer todos los datos de la bd
+
+ http://localhost:5000/Api/Pizzas/1      <<<<< Busca una pizza por ID
+
+
+http://localhost:5221/api/pizzas/1    <<< Para Borrar una pizza por su ID
+
+
+Para hacer un PUT se usa el link con el ID de la pizza a modificar
+http://localhost:5221/api/pizzas/2
+
+Se selecciona body, y en tipo de dato JSON
+Y en en cuerpo se inserta el objeto con la modificación
+{
+        "id": 2,
+        "nombre": "Pizzaaaaaaaaaaaaaa",
+        "libreGluten": true,
+        "importe": 1000,
+        "descripcion": "Pizza con queso Muzzarella, tiene rica cebolla y te deja un aliento como para hacerle la permanente a tu pareja.."
+    }
